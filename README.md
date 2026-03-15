@@ -1,4 +1,4 @@
-# お問い合わせフォーム（Contact Form）
+# Mogitate Market
 
 ## 環境構築
 
@@ -36,4 +36,4 @@ php artisan db:seed
 
 ### ER図
 
-![ER図](src/public/images/er.png)
+![ER図](src/public/images/ER.jpg)
