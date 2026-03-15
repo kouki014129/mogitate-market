@@ -1,0 +1,261 @@
+body {
+    background: #f7f7f7;
+}
+
+.main {
+    padding: 40px 32px 64px;
+}
+
+.product-edit {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.product-edit__inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.product-edit__breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    color: #808080;
+    font-size: 14px;
+}
+
+.product-edit__breadcrumb a {
+    color: #4d8ac9;
+    text-decoration: none;
+}
+
+.product-edit__form {
+    display: grid;
+    gap: 20px;
+}
+
+.product-edit__top {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.product-edit__image-area {
+    display: grid;
+    gap: 10px;
+    flex: 0 0 320px;
+    max-width: 320px;
+}
+
+.product-edit__image-wrap {
+    overflow: hidden;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    background: #ffffff;
+    width: 100%;
+}
+
+.product-edit__image {
+    display: block;
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
+
+.product-edit__file-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.product-edit__file-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding: 0 14px;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    background: #efefef;
+    color: #555555;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.product-edit__file-input {
+    display: none;
+}
+
+.product-edit__file-name {
+    color: #9a9a9a;
+    font-size: 13px;
+    max-width: 100%;
+    word-break: break-all;
+}
+
+.product-edit__fields,
+.product-edit__field {
+    display: grid;
+    gap: 10px;
+    min-width: 0;
+}
+
+.product-edit__fields {
+    flex: 1;
+}
+
+.product-edit__fields {
+    gap: 20px;
+}
+
+.product-edit__label {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-edit__input,
+.product-edit__textarea {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #333333;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.product-edit__input {
+    height: 42px;
+    padding: 0 14px;
+}
+
+.product-edit__textarea {
+    min-height: 126px;
+    padding: 14px;
+    resize: none;
+}
+
+.product-edit__input::placeholder,
+.product-edit__textarea::placeholder {
+    color: #c8c8c8;
+}
+
+.product-edit__seasons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    padding-top: 8px;
+}
+
+.product-edit__season {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #555555;
+    font-size: 15px;
+}
+
+.product-edit__radio {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    accent-color: #666666;
+}
+
+.product-edit__error {
+    margin: 0;
+    color: #eb6d6d;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.product-edit__actions {
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    gap: 14px;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+}
+
+.product-edit__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.product-edit__button--back {
+    grid-column: 2;
+    width: 220px;
+    background: #d8d8d8;
+    color: #333333;
+}
+
+.product-edit__button--save {
+    grid-column: 3;
+    width: 220px;
+    background: #f5c800;
+    color: #333333;
+}
+
+.product-edit__delete {
+    grid-column: 4;
+    justify-self: end;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 44px;
+    margin-left: 0;
+    border: none;
+    background: transparent;
+    color: #f15b5b;
+    cursor: pointer;
+}
+
+.product-edit__delete svg {
+    width: 34px;
+    height: 34px;
+    fill: currentColor;
+}
+
+@media screen and (max-width: 900px) {
+    .product-edit__top {
+        flex-direction: column;
+    }
+
+    .product-edit__actions {
+        grid-template-columns: 1fr;
+        max-width: none;
+    }
+
+    .product-edit__button--back,
+    .product-edit__button--save,
+    .product-edit__delete {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .product-edit__image-area {
+        flex-basis: auto;
+        max-width: none;
+        width: 100%;
+    }
+
+    .product-edit__image {
+        height: auto;
+        aspect-ratio: 1.1 / 1;
+    }
+}
